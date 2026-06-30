@@ -1,0 +1,50 @@
+Start
+   │
+   ▼
+Problem Definition and Requirement Analysis
+   │
+   ▼
+Literature Survey and Impact Analysis
+   │
+   ▼
+Agricultural Dataset Collection
+   │
+   ▼
+Data Exploration and Visualization
+   │
+   ▼
+Data Pre-processing
+   │
+   ├── Handle Missing Values
+   ├── Remove Outliers
+   ├── Extract Seasonal Information
+   └── Train-Test Split
+   │
+   ▼
+Machine Learning Model Development
+   │
+   ├── K-Means Clustering
+   ├── Logistic Regression
+   └── Model Evaluation
+   │
+   ▼
+Save Best Performing Model
+   │
+   ▼
+Develop Web Application
+   │
+   ├── HTML Frontend
+   ├── Flask Backend
+   └── Model Integration
+   │
+   ▼
+User Inputs Agricultural Parameters
+   │
+   ▼
+Crop Recommendation Generated
+   │
+   ▼
+Display Recommended Crop
+   │
+   ▼
+End
