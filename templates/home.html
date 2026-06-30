@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OptiCrop - Home</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body class="home">
+
+    <!-- Navigation Bar -->
+    <div class="topnav">
+        <a class="active" href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/findyourcrop">Find Your Crop</a>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="overlay">
+
+        <div class="content">
+
+            <h1>OptiCrop</h1>
+
+            <h2>Smart Agricultural Production Optimization Engine</h2>
+
+            <p>
+                OptiCrop is an intelligent crop recommendation system that
+                predicts the most suitable crop based on soil nutrients
+                and environmental conditions using Machine Learning.
+            </p>
+
+            <a href="/findyourcrop">
+                <button>Get Started</button>
+            </a>
+
+        </div>
+
+    </div>
+
+</body>
+</html>

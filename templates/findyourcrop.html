@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Your Crop - OptiCrop</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body class="crop">
+
+    <!-- Navigation Bar -->
+    <div class="topnav">
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a class="active" href="/findyourcrop">Find Your Crop</a>
+    </div>
+
+    <div class="overlay">
+
+        <div class="form-container">
+
+            <h1>Crop Recommendation</h1>
+
+            <form action="/predict" method="POST">
+
+                <input type="number" step="any" name="Nitrogen" placeholder="Nitrogen (N)" required>
+
+                <input type="number" step="any" name="Phosphorous" placeholder="Phosphorous (P)" required>
+
+                <input type="number" step="any" name="Potassium" placeholder="Potassium (K)" required>
+
+                <input type="number" step="any" name="Temperature" placeholder="Temperature (°C)" required>
+
+                <input type="number" step="any" name="Humidity" placeholder="Humidity (%)" required>
+
+                <input type="number" step="any" name="pH" placeholder="Soil pH" required>
+
+                <input type="number" step="any" name="Rainfall" placeholder="Rainfall (mm)" required>
+
+                <button type="submit">Predict Crop</button>
+
+            </form>
+
+            <h2>{{ prediction_text }}</h2>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
